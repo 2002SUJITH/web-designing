@@ -1,0 +1,147 @@
+
+/*Universal selector: Selects all elements on a page, e.g. "*". */
+*{
+    font-style:italic;
+}
+
+/*Type selector: Selects elements based on the tag name, e.g. "p" to select all "p" elements.*/
+p{
+    color: rgb(103, 39, 11);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    font-style:italic;
+    background-color: rgb(224, 175, 27);
+}
+a{
+    color: rgb(200, 0, 153);
+}
+
+li{
+    list-style-type:square;
+    color:rgb(102, 117, 176) ;
+}
+
+/*  Class selector: Selects elements based on the class attribute, e.g. ".example" to select all elements with the class "example". */
+
+.special{
+    color: rgb(24, 223, 6);
+    font-weight: bold;
+}
+
+
+/*Adjacent sibling selector: Selects elements that are directly preceded by a specific element, e.g. "h1 + p" to select a "p" element immediately following an "h1" element.*/
+
+h1+p{
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+}
+
+/*The CSS selector "body h1+p .special" selects elements with the class "special" that are descendants (not necessarily direct children) of a "p" element immediately following an "h1" element within the "body" element.*/
+
+body h1+p  .special{
+    color: rgb(191, 141, 79);
+    background-color: black;
+    padding: 3px;
+}
+
+
+/*body h1+p >.special{
+    color: rgb(191, 141, 79);
+    background-color: black;
+    padding: 3px;
+
+    The CSS selector "body h1+p > .special" selects elements with the class "special" that are direct children of a "p" element, immediately following an "h1" element within the "body" element.
+
+}*/
+
+/*
+Pseudo-class selector: Selects elements based on their state, e.g. "a:hover" to select an "a" element when the mouse hovers over it.
+*/
+a:hover{
+    color: rgb(8, 252, 0);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgb(28, 33, 143);
+    padding: 0%;
+}
+a:focus{
+    color: blue;
+}
+
+
+/*ID selector: Selects elements based on the id attribute, e.g. "#example" to select the element with the id "example".*/
+
+#one{
+    color: rgb(240, 240, 26);
+    background-color: rgb(80, 36, 228);
+  
+    font-style: normal;
+}
+
+#emTwo{
+    background-color: rgb(182, 148, 214);
+}
+
+/*Attribute selector: Selects elements based on the presence of a specific attribute or attribute value, e.g. "a[target]" to select all "a" elements with a "target" attribute.*/
+
+
+
+ol li[class]{
+    font-size: 200%;
+}
+
+span[id] {
+    background-color: rgb(96, 51, 14);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+        selctors in css
+        ________________
+Class selector: Selects elements based on the class attribute, e.g. ".example" to select all elements with the class "example".
+
+ID selector: Selects elements based on the id attribute, e.g. "#example" to select the element with the id "example".
+
+Type selector: Selects elements based on the tag name, e.g. "p" to select all "p" elements.
+
+Universal selector: Selects all elements on a page, e.g. "*".
+
+Attribute selector: Selects elements based on the presence of a specific attribute or attribute value, e.g. "a[target]" to select all "a" elements with a "target" attribute.
+
+Pseudo-class selector: Selects elements based on their state, e.g. "a:hover" to select an "a" element when the mouse hovers over it.
+
+Adjacent sibling selector: Selects elements that are directly preceded by a specific element, e.g. "h1 + p" to select a "p" element immediately following an "h1" element.
+
+Child selector: Selects elements that are immediate children of a specific element, e.g. "ul > li" to select all "li" elements that are direct children of an "ul" element.
+
+
+Pseudo-class selectors in CSS are used to select elements based on their state or position in the document. They are called "pseudo-classes" because they are not actual classes, but they allow you to style elements based on certain conditions. Some commonly used pseudo-class selectors are:
+
+:hover - selects an element when the user hovers over it with the mouse.
+
+:active - selects an element when it is being activated, such as when a user clicks on it.
+
+:focus - selects an element when it has focus, such as when a user tabs to it or clicks on it.
+
+:visited - selects an element that has been visited by the user, typically used with links.
+
+:first-child - selects an element that is the first child of its parent.
+
+:last-child - selects an element that is the last child of its parent.
+
+:nth-child() - selects an element that is the nth child of its parent, where n is an integer value.
+
+:not() - selects elements that do not match the given selector.
+/
