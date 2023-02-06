@@ -1,0 +1,61 @@
+div {
+ 
+
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: large;
+
+}
+
+em {
+    color: rgba(225, 202, 202, 0.995);
+    height: 700px;
+    font-size: 200%;
+    font-style: italic;
+    font-size: 300%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+
+.img1 {
+    
+    color: rgba(225, 202, 202, 0.995);
+    height: 700px;
+    font-size: 200%;
+    font-style: italic;
+    background: url(images/leaf2.jpeg);
+    border: 2px solid rgb(228, 212, 212);
+    background-repeat: round;
+    
+}
+.img2{
+    background: url(images/bc4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(30, 26, 26, 0.995);
+    height: 700px;
+    font-size: 200%;
+    font-style: italic;
+}
+
+.img3{
+    background: url(images/img1.png);
+    background-repeat: no-repeat;
+   
+    color: rgba(30, 26, 26, 0.995);
+    height: 400px;
+    font-size: 200%;
+    font-style: italic;
+    background-position: 20% 50%;
+}
+
+#i23{
+    text-align: center;
+}
