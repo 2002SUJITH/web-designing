@@ -5,7 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CEA__Home</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="p10cs.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(window).on("load", function() {
+            $(".loading-screen").fadeOut("slow");
+          });
+        </script>
         <style>
             body{
                 font-style: italic;
@@ -16,9 +22,23 @@
         </style>
     </head>
     <body>
-        <header style="background-color: rgb(152, 195, 195);">
-            <h1 style="color: rgb(55, 55, 95);">COLLEGE OF ENGINEERING ADOOR</h1>
-            <img src="images/cea2.jpeg" alt="This is an image" width="450">
+        <div class="loading-screen">
+            <div class="loading-icon">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+            </div>
+            <h1 class="loading-title">COLLEGE OF ENGINEERING</h1>
+          </div>
+          
+        <header>
+            <div class="img1">
+                <h1 style="color: rgb(68, 35, 71);">COLLEGE OF ENGINEERING ADOOR</h1>
+            </div>
+
+           <!--     <img src="images/cea2.jpeg" alt="This is an image" width="450">--> 
         </header>
         <nav>
             <a href="p05.html">HOME</a> &nbsp;&nbsp; | &nbsp;&nbsp;

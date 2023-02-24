@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+	background: #102131;
+	font-family: sans-serif;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+#loading-page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#content {
+	display: none;
+}
+
+#container {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	transform: rotate(45deg);
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+}
+
+h1 {
+	font-size: 24px;
+	margin-top: 20px;
+	text-align: center;
+}
+    </style>
+  
+</head>
+<body>
+    <div id="loading-page">
+		<canvas id="container" width="200" height="200"></canvas>
+		<h1>Loading...</h1>
+	</div>
+	<div id="content" style="display:none">
+        <h1>hai i am sujith</h1>
+        <p>welcome to website</p>
+	</div>
+	
+
+</body>
+</html>

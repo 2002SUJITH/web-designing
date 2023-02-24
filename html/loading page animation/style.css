@@ -1,0 +1,77 @@
+/* Styling for the container */
+#container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/* Styling for the background */
+#background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: -1;
+}
+
+/* Styling for the polygons */
+.polygon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.polygon:nth-child(1) {
+	clip-path: polygon(0 0, 0 100%, 50% 50%);
+	background-color: #1e88e5;
+	animation: colorgrading 3s ease-in-out infinite alternate;
+	animation-delay: 0s;
+}
+
+.polygon:nth-child(2) {
+	clip-path: polygon(0 0, 50% 50%, 0 100%);
+	background-color: #5c6bc0;
+	animation: colorgrading 3s ease-in-out infinite alternate;
+	animation-delay: 0.5s;
+}
+
+.polygon:nth-child(3) {
+	clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+	background-color: #f44336;
+	animation: colorgrading 3s ease-in-out infinite alternate;
+	animation-delay: 1s;
+}
+
+.polygon:nth-child(4) {
+	clip-path: polygon(50% 50%, 100% 100%, 0 100%);
+	background-color: #66bb6a;
+	animation: colorgrading 3s ease-in-out infinite alternate;
+	animation-delay: 1.5s;
+}
+
+/* Styling for the content */
+#content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding-top: 50px;
+	color: #fff;
+	font-size: 36px;
+}
+
+/* Animation for color grading */
+@keyframes colorgrading {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 0.6;
+		transform: scale(1.2);
+	}
+}

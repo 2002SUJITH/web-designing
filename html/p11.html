@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color in css</title>
+    <style>
+        h1{
+            color:rgb(85, 26, 112);
+            background-color: rgb(179, 163, 189); 
+
+        }
+        p{
+            color: rgb(35, 131, 99);
+        }
+        p2{
+            color : #c6e213e2;
+        }
+        .background { 
+            background-image: url(images/img2.jpg);
+            height: 100px;
+            width: 100px;
+            background-repeat: no-repeat;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>This is heading </h1>
+    <div class="background">
+        <p>this is paragraph</p>
+    
+    </div>
+ 
+    
+    <p2>this is paragraph 2</p2>
+    <p>this is paragraph 3</p>
+</body>
+</html>
+
+<!--
+    COLOR PROPERTY 
+
+    RGB 
+
+    (RED(0-255) GREEN(0-255) BLUE(0-255))
+    INTENSITY BETWEEN 0-255
+
+    Hexadecimal colors
+    
+    hexadecimal colors are represented by a combination of six characters that represent the intensity of red, green, and blue in the color. The characters can be letters A-F or numbers 0-9, and are arranged in pairs to represent the values for each color
+    selector {
+         property: #RRGGBB;
+    }
+
+        /* Red */
+        color: #FF0000;
+
+        /* Green */
+        color: #00FF00;
+
+        /* Blue */
+        color: #0000FF;
+
+        /* White */
+        color: #FFFFFF;
+
+        /* Black */
+        color: #000000;
+
+    BACKGROUND COLOR
+    background color of an element using the background-color property. This property accepts a wide range of color values, including named colors, RGB values, and hexadecimal color codes.
+
+            /* Using a named color */
+        background-color: red;
+
+        /* Using an RGB value */
+        background-color: rgb(255, 0, 0);
+
+        /* Using a hexadecimal color code */
+        background-color: #FF0000;
+
+        You can also set the background color to be transparent, which allows the content behind the element to show through:
+
+        /* Setting the background color to be transparent */
+        background-color: transparent;
+
+        In addition to the background-color property, there are several other properties that can be used to control the appearance of an element's background, including:
+
+        background-image: sets an image as the background of an element
+        background-position: sets the position of the background image within the element
+        background-repeat: sets whether or not the background image should be repeated
+        background-size: sets the size of the background image within the element
+
+           /* Using a background image */
+        background-image: url('background-image.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        In this example, the background-image property is used to specify the image to be used as the background. The background-position property centers the image within the element, and background-repeat is set to no-repeat to prevent the image from repeating. Finally, background-size is set to cover to ensure that the image covers the entire element.
+
+        BACKGROUND POSITION 
+        the background-position property is used to set the position of a background image within an element. This property takes two values, which specify the horizontal and vertical position of the background image, respectively.
+
+                selector {
+        background-position: horizontal vertical;
+        }
+                /* Using length values */
+        background-position: 10px 20px;
+
+        /* Using keyword values */
+        background-position: right bottom;
+
+        /* Using percentage values */
+        background-position: 50% 50%;
+        By default, the background image is positioned at the top-left corner of the element. You can use background-position to adjust the position of the image as needed.
+
+
+        -->
